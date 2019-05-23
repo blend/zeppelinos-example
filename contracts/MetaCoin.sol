@@ -49,4 +49,8 @@ contract MetaCoin is Initializable, Ownable {
   function getBalance(address addr) public view returns (uint) {
     return balances[addr];
   }
+
+  function setConversionRate(uint _conversionRate) public onlyOwner {
+    conversionRate = _conversionRate;
+  }
 }

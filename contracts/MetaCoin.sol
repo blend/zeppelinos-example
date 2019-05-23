@@ -6,6 +6,21 @@ pragma solidity ^0.5.0;
 import "openzeppelin-eth/contracts/ownership/Ownable.sol";
 import "zos-lib/contracts/Initializable.sol";
 
+/**
+ * The MetaCoin contract.
+ *
+ * WARNING: This is a ZeppelinOS upgradable contract. Be careful not to disrupt
+ * the existing storage layout when making upgrades to the contract. In particular,
+ * existing fields should not be removed and should not have their types changed.
+ * The order of field declarations must not be changed, and new fields must be added
+ * below all existing declarations.
+ *
+ * The base contracts and the order in which they are declared must not be
+ * changed. New fields must not be added to base contracts (unless the base contract
+ * has reserved placeholder fields for this purpose).
+ *
+ * See https://docs.zeppelinos.org/docs/writing_contracts.html for more info.
+ */
 contract MetaCoin is Initializable, Ownable {
   uint public conversionRate;
 

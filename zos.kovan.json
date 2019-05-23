@@ -1,0 +1,121 @@
+{
+  "contracts": {
+    "MetaCoin": {
+      "address": "0xd7aed33047C53F529298f463dE1FF5c68ef6227f",
+      "constructorCode": "608060405234801561001057600080fd5b50610b3c806100206000396000f3fe",
+      "bodyBytecodeHash": "fa07cc1395210738a8874870059ee57a98623bf5d8392ae60407cde1a830c304",
+      "localBytecodeHash": "4788dcb1729132a51c173f528874c94ed3a0e5404f57d2b9591e5fbb54751c80",
+      "deployedBytecodeHash": "4788dcb1729132a51c173f528874c94ed3a0e5404f57d2b9591e5fbb54751c80",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 294,
+          "type": "t_bool",
+          "src": "757:24:3"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 296,
+          "type": "t_bool",
+          "src": "876:25:3"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 345,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:3"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "_owner",
+          "astId": 178,
+          "type": "t_address",
+          "src": "302:22:2"
+        },
+        {
+          "contract": "Ownable",
+          "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
+          "label": "______gap",
+          "astId": 289,
+          "type": "t_array:50<t_uint256>",
+          "src": "2186:29:2"
+        },
+        {
+          "contract": "MetaCoin",
+          "path": "contracts/MetaCoin.sol",
+          "label": "conversionRate",
+          "astId": 9,
+          "type": "t_uint256",
+          "src": "881:26:0"
+        },
+        {
+          "contract": "MetaCoin",
+          "path": "contracts/MetaCoin.sol",
+          "label": "balances",
+          "astId": 13,
+          "type": "t_mapping<t_uint256>",
+          "src": "912:34:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "zos-demo/MetaCoin": [
+      {
+        "address": "0xb3CD0b75Aa0B41278b704264152685447Da296f1",
+        "version": "0.1.0",
+        "implementation": "0xd7aed33047C53F529298f463dE1FF5c68ef6227f"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0xCfdA9f7Bf4254a788e43342d55E8CEaE07Eb0D58"
+  }
+}

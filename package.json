@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "truffle": "^5.0.8"
+    "truffle": "^5.0.8",
+    "zos": "^2.2.3"
   },
   "dependencies": {
     "openzeppelin-solidity": "^2.1.1"

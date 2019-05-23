@@ -3,17 +3,20 @@
 
 pragma solidity ^0.5.0;
 
-import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "openzeppelin-eth/contracts/ownership/Ownable.sol";
+import "zos-lib/contracts/Initializable.sol";
 
-contract MetaCoin is Ownable {
-  uint public conversionRate = 2;
+contract MetaCoin is Initializable, Ownable {
+  uint public conversionRate;
 
   mapping (address => uint) balances;
 
   event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
-  constructor() public {
+  function initialize(address sender) public initializer {
+    Ownable.initialize(sender);
     balances[owner()] = 10000;
+    conversionRate = 2;
   }
 
   function sendCoin(address receiver, uint amount) public returns (bool sufficient) {

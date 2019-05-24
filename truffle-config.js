@@ -11,5 +11,14 @@ module.exports = {
       gas: 5000000,
       gasPrice: 2000000000,
     },
+    main: {
+      provider: () => new HDWalletProvider(
+        process.env.MNEMONIC,
+        `https://mainnet.infura.io/${process.env.INFURA_KEY}`,
+      ),
+      network_id: 1,
+      gas: 5000000,
+      gasPrice: 2000000000,
+    },
   },
 };

@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "truffle": "5.0.8",
-    "zos": "2.2.3"
+    "zos": "2.4.3"
   },
   "dependencies": {
     "openzeppelin-eth": "2.1.3",

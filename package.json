@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "truffle": "5.0.8",
+    "truffle": "5.7.9",
     "zos": "2.2.3"
   },
   "dependencies": {
